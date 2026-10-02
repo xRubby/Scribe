@@ -8,8 +8,6 @@ A differenza dei tradizionali strumenti di generazione automatica, Scribe non si
 
 > 🎓 Progetto sviluppato nell'ambito della **tesi di laurea triennale in Informatica** presso l'Università degli Studi di Salerno, Anno Accademico 2025–2026.
 
----
-
 ## ✨ Funzionalità
 
 * 🧠 **Generazione personalizzata**
@@ -35,8 +33,6 @@ A differenza dei tradizionali strumenti di generazione automatica, Scribe non si
 
 * 💾 **Persistenza delle preferenze**
   I profili vengono salvati e mantenuti tra sessioni differenti di Visual Studio Code.
-
----
 
 ## 💡 Perché Scribe?
 
@@ -69,8 +65,6 @@ Esempi:
 Durante la generazione, questi esempi vengono utilizzati come riferimenti stilistici per il modello. L'output viene quindi condizionato non soltanto dal codice da documentare, ma anche dalle preferenze dello sviluppatore.
 
 La personalizzazione viene ottenuta senza effettuare fine-tuning del modello.
-
----
 
 ## 🧩 Come funziona
 
@@ -118,8 +112,6 @@ I principali componenti sono:
 * **Generazione esplicita** — genera commenti su codice selezionato dall'utente.
 * **Generazione implicita** — propone automaticamente suggerimenti inline nell'editor.
 
----
-
 ## 🚀 Modalità di utilizzo
 
 Scribe offre due modalità di interazione.
@@ -156,8 +148,6 @@ Aggiornamento del profilo
 Generazioni successive più personalizzate
 ```
 
----
-
 ### 2. Modalità implicita
 
 Scribe può anche lavorare automaticamente in background.
@@ -175,8 +165,6 @@ def binary_search(arr, x): # Implementa la ricerca binaria su un array ordinato.
 Il suggerimento può essere accettato premendo **Tab** oppure ignorato continuando a scrivere.
 
 L'accettazione del suggerimento viene inoltre interpretata come feedback positivo e può contribuire all'aggiornamento del profilo attivo.
-
----
 
 ## 👤 Profili utente
 
@@ -208,8 +196,6 @@ Gli esempi vengono utilizzati come riferimento tramite **few-shot prompting**, p
 I profili vengono salvati persistentemente nello storage globale di Visual Studio Code.
 
 Per evitare una crescita indefinita del profilo, Scribe conserva al massimo **cinque esempi**, mantenendo i primi due esempi forniti dall'utente come riferimenti stilistici stabili.
-
----
 
 ## 🧠 Modello AI
 
@@ -245,8 +231,6 @@ temperature: 0.2
 max_tokens: 80
 ```
 
----
-
 ## 🌍 Linguaggi supportati
 
 Scribe supporta attualmente il rilevamento dei simboli nei seguenti **13 linguaggi**:
@@ -268,8 +252,6 @@ Scribe supporta attualmente il rilevamento dei simboli nei seguenti **13 linguag
 Per i linguaggi non supportati viene utilizzato un fallback basato su pattern generici in stile C.
 
 Il rilevamento dei simboli è attualmente realizzato tramite **espressioni regolari specifiche per linguaggio**.
-
----
 
 ## 🏗️ Architettura
 
@@ -313,8 +295,6 @@ Implementano le due modalità di generazione:
 * generazione esplicita tramite selezione;
 * generazione implicita tramite ghost text.
 
----
-
 ## ⚙️ Requisiti
 
 Per eseguire Scribe sono necessari:
@@ -324,8 +304,6 @@ Per eseguire Scribe sono necessari:
 * npm
 * una API key di Hugging Face
 * una connessione Internet per l'inferenza del modello
-
----
 
 ## 🔧 Installazione
 
@@ -356,8 +334,6 @@ F5
 
 per avviare l'**Extension Development Host**.
 
----
-
 ## 🔑 Configurazione
 
 Scribe richiede una API key di Hugging Face per effettuare le richieste al modello.
@@ -372,8 +348,6 @@ scribe.apiKey
 
 > ⚠️ **Non inserire mai la tua API key direttamente nel codice o nel repository Git.**
 
----
-
 ## 🗺️ Sviluppi futuri
 
 Tra le possibili evoluzioni del progetto:
@@ -381,8 +355,6 @@ Tra le possibili evoluzioni del progetto:
 * [ ] Selezione dinamice degli esempi più rilevanti in base al codice da commentare
 * [ ] Studi con un numero maggiore di sviluppatori
 * [ ] Possibilità di eseguire modelli localmente
-
----
 
 ## 🎓 Contesto accademico
 
@@ -394,8 +366,6 @@ Scribe è stato sviluppato come progetto della **tesi di laurea triennale in Inf
 **Autore:** Ruben Gigante
 **Relatore:** Prof. Fabio Palomba
 **Anno Accademico:** 2025–2026
-
----
 
 ## 🤝 Contributi
 
