@@ -169,8 +169,7 @@ Se non è presente, Scribe genera automaticamente un suggerimento e lo visualizz
 Ad esempio:
 
 ```python
-def binary_search(arr, x):
-    # Implementa la ricerca binaria su un array ordinato.
+def binary_search(arr, x): # Implementa la ricerca binaria su un array ordinato.
 ```
 
 Il suggerimento può essere accettato premendo **Tab** oppure ignorato continuando a scrivere.
